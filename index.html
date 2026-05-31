@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Part-Time Jobs Kerala</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --green: #1a7a4a;
+            --green-light: #25a262;
+            --green-dark: #145e38;
+            --green-bg: #edf7f1;
+            --amber: #f4a11b;
+            --amber-light: #fbbf3a;
+            --amber-dark: #d4880e;
+            --white: #ffffff;
+            --off-white: #f9fafb;
+            --gray-50: #f3f4f6;
+            --gray-100: #e5e7eb;
+            --gray-200: #d1d5db;
+            --gray-400: #9ca3af;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --text-dark: #111827;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.10);
+            --shadow-lg: 0 10px 36px rgba(0, 0, 0, 0.13);
+            --radius: 14px;
+            --radius-sm: 8px;
+            --radius-lg: 22px;
+            --transition: 0.22s cubic-bezier(.4, 0, .2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: var(--off-white);
+            color: var(--text-dark);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Baloo 2', cursive;
+        }
+
+        /* ===== PAGE SYSTEM ===== */
+        .page {
+            display: none;
+            min-height: 100vh;
+            animation: fadeUp 0.38s cubic-bezier(.4, 0, .2, 1) both;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(22px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            background: var(--white);
+            border-bottom: 2px solid var(--green-bg);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 16px rgba(26, 122, 74, 0.07);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--green), var(--green-light));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 2px 8px rgba(26, 122, 74, 0.25);
+        }
+
+        .logo-text {
+            font-family: 'Baloo 2', cursive;
+            font-weight: 800;
+            font-size: 1.15rem;
+            color: var(--green-dark);
+            line-height: 1.1;
+        }
+
+        .logo-sub {
+            font-size: 0.7rem;
+            color: var(--gray-400);
+            font-weight: 500;
+            display: block;
+        }
+
+        .btn-register-header {
+            background: linear-gradient(135deg, var(--green), var(--green-light));
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-sm);
+            padding: 9px 22px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.92rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 2px 10px rgba(26, 122, 74, 0.22);
+            letter-spacing: 0.01em;
+        }
+
+        .btn-register-header:hover {
+            background: linear-gradient(135deg, var(--green-light), var(--green));
+            transform: translateY(-1px);
+            box-shadow: 0 4px 16px rgba(26, 122, 74, 0.32);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 55%, #2dbb6e 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 56px 20px 60px;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 5px 14px;
+            border-radius: 50px;
+            margin-bottom: 18px;
+            letter-spacing: 0.04em;
+        }
+
+        .hero h1 {
+            font-size: clamp(1.9rem, 5vw, 2.9rem);
+            color: var(--white);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 14px;
+            text-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
+        }
+
+        .hero h1 span {
+            color: var(--amber-light);
+        }
+
+        .hero p {
+            color: rgba(255, 255, 255, 0.88);
+            font-size: 1.05rem;
+            max-width: 540px;
+            margin: 0 auto 28px;
+            line-height: 1.65;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            background: rgba(255, 255, 255, 0.13);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-sm);
+            padding: 12px 22px;
+            color: white;
+            backdrop-filter: blur(6px);
+        }
+
+        .hero-stat strong {
+            display: block;
+            font-size: 1.3rem;
+            font-family: 'Baloo 2', cursive;
+            font-weight: 800;
+        }
+
+        .hero-stat span {
+            font-size: 0.78rem;
+            opacity: 0.82;
+        }
+
+        .hero-leaves {
+            position: absolute;
+            right: -30px;
+            top: 10px;
+            font-size: 6rem;
+            opacity: 0.07;
+            transform: rotate(20deg);
+            pointer-events: none;
+        }
+
+        /* ===== FILTER SECTION ===== */
+        .filters-wrap {
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-100);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 64px;
+            z-index: 80;
+        }
+
+        .filters {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 14px 20px;
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-label {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--gray-600);
+            white-space: nowrap;
+        }
+
+        .filter-select {
+            flex: 1;
+            min-width: 160px;
+            max-width: 240px;
+            border: 1.5px solid var(--gray-200);
+            border-radius: var(--radius-sm);
+            padding: 9px 14px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--gray-700);
+            background: var(--gray-50);
+            cursor: pointer;
+            transition: var(--transition);
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            padding-right: 36px;
+        }
+
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--green);
+            background-color: var(--white);
+        }
+
+        .filter-count {
+            margin-left: auto;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--gray-400);
+            white-space: nowrap;
+        }
+
+        .filter-count span {
+            color: var(--green);
+            font-size: 1rem;
+        }
+
+        /* ===== WORKERS SECTION ===== */
+        .workers-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 28px 20px 60px;
+        }
+
+        .section-title {
+            font-family: 'Baloo 2', cursive;
+            font-weight: 800;
+            font-size: 1.35rem;
+            color: var(--gray-800);
+            margin-bottom: 20px;
+        }
+
+        .section-title span {
+            color: var(--green);
+        }
+
+        .workers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 18px;
+        }
+
+        @media(max-width:600px) {
+            .workers-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+        }
+
+        @media(max-width:360px) {
+            .workers-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== WORKER CARD ===== */
+        .worker-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1.5px solid var(--gray-100);
+            cursor: default;
+        }
+
+        .worker-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--green-bg);
+        }
+
+        .card-photo-wrap {
+            position: relative;
+            height: 140px;
+            overflow: hidden;
+            background: var(--green-bg);
+        }
+
+        .card-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .worker-card:hover .card-photo {
+            transform: scale(1.05);
+        }
+
+        .card-category-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(26, 122, 74, 0.88);
+            color: white;
+            font-size: 0.66rem;
+            font-weight: 700;
+            padding: 3px 9px;
+            border-radius: 50px;
+            letter-spacing: 0.03em;
+            backdrop-filter: blur(4px);
+            text-transform: uppercase;
+        }
+
+        .card-body {
+            padding: 14px 14px 14px;
+        }
+
+        .card-name {
+            font-family: 'Baloo 2', cursive;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--gray-800);
+            margin-bottom: 3px;
+        }
+
+        .card-meta {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .card-age {
+            font-size: 0.76rem;
+            font-weight: 600;
+            color: var(--gray-400);
+            background: var(--gray-50);
+            border-radius: 50px;
+            padding: 2px 8px;
+        }
+
+        .card-location {
+            font-size: 0.76rem;
+            font-weight: 600;
+            color: var(--gray-600);
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .card-location::before {
+            content: '📍';
+            font-size: 0.72rem;
+        }
+
+        .btn-contact {
+            width: 100%;
+            background: linear-gradient(135deg, var(--green), var(--green-light));
+            color: white;
+            border: none;
+            border-radius: var(--radius-sm);
+            padding: 9px 0;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            letter-spacing: 0.01em;
+        }
+
+        .btn-contact:hover {
+            background: linear-gradient(135deg, var(--green-light), var(--green-dark));
+            transform: scale(1.02);
+        }
+
+        .card-hidden {
+            display: none;
+        }
+
+        /* ===== NO RESULTS ===== */
+        .no-results {
+            grid-column: 1/-1;
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--gray-400);
+        }
+
+        .no-results .icon {
+            font-size: 3.5rem;
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        .no-results p {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        /* ===== REGISTRATION PAGE ===== */
+        .reg-page-wrap {
+            min-height: 100vh;
+            background: linear-gradient(160deg, var(--green-bg) 0%, var(--white) 60%);
+        }
+
+        .reg-header {
+            background: var(--white);
+            border-bottom: 2px solid var(--green-bg);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .reg-header-inner {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .btn-back {
+            background: none;
+            border: 1.5px solid var(--gray-200);
+            border-radius: var(--radius-sm);
+            padding: 7px 16px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--gray-600);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-back:hover {
+            border-color: var(--green);
+            color: var(--green);
+        }
+
+        .progress-bar-wrap {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 16px 20px 0;
+        }
+
+        .progress-steps {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            margin-bottom: 24px;
+        }
+
+        .p-step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+
+        .p-step::after {
+            content: '';
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            width: 100%;
+            height: 2px;
+            background: var(--gray-200);
+            z-index: 0;
+        }
+
+        .p-step:last-child::after {
+            display: none;
+        }
+
+        .p-dot {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--gray-200);
+            color: var(--gray-400);
+            font-size: 0.82rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 5px;
+            position: relative;
+            z-index: 1;
+            transition: var(--transition);
+        }
+
+        .p-step.active .p-dot {
+            background: var(--green);
+            color: white;
+            box-shadow: 0 2px 10px rgba(26, 122, 74, 0.3);
+        }
+
+        .p-step.done .p-dot {
+            background: var(--green-light);
+            color: white;
+        }
+
+        .p-step.active::after,
+        .p-step.done::after {
+            background: var(--green-light);
+        }
+
+        .p-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--gray-400);
+        }
+
+        .p-step.active .p-label {
+            color: var(--green);
+        }
+
+        .p-step.done .p-label {
+            color: var(--green-light);
+        }
+
+        .form-card {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            padding: 0 20px;
+        }
+
+        .form-inner {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 30px 28px;
+            box-shadow: var(--shadow-md);
+            border: 1.5px solid var(--gray-100);
+        }
+
+        .form-title {
+            font-family: 'Baloo 2', cursive;
+            font-weight: 800;
+            font-size: 1.45rem;
+            color: var(--gray-800);
+            margin-bottom: 5px;
+        }
+
+        .form-subtitle {
+            font-size: 0.9rem;
+            color: var(--gray-400);
+            margin-bottom: 26px;
+            font-weight: 500;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.84rem;
+            font-weight: 700;
+            color: var(--gray-700);
+            margin-bottom: 7px;
+        }
+
+        .form-label .req {
+            color: var(--green);
+        }
+
+        .form-input,
+        .form-select {
+            width: 100%;
+            border: 1.5px solid var(--gray-200);
+            border-radius: var(--radius-sm);
+            padding: 11px 14px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.93rem;
+            font-weight: 600;
+            color: var(--gray-800);
+            background: var(--gray-50);
+            transition: var(--transition);
+        }
+
+        .form-input:focus,
+        .form-select:focus {
+            outline: none;
+            border-color: var(--green);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(26, 122, 74, 0.1);
+        }
+
+        .form-select {
+            appearance: none;
+            cursor: pointer;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        @media(max-width:480px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Profile upload */
+        .upload-area {
+            border: 2px dashed var(--gray-200);
+            border-radius: var(--radius);
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            background: var(--gray-50);
+            position: relative;
+        }
+
+        .upload-area:hover {
+            border-color: var(--green);
+            background: var(--green-bg);
+        }
+
+        .upload-preview {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 10px;
+            border: 3px solid var(--green);
+            box-shadow: 0 2px 12px rgba(26, 122, 74, 0.18);
+            display: block;
+        }
+
+        .upload-text {
+            font-size: 0.84rem;
+            font-weight: 600;
+            color: var(--gray-600);
+        }
+
+        .upload-hint {
+            font-size: 0.74rem;
+            color: var(--gray-400);
+            margin-top: 3px;
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 84px;
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Primary Btn */
+        .btn-primary {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, var(--green-dark), var(--green-light));
+            color: white;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-family: 'Nunito', sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 18px rgba(26, 122, 74, 0.28);
+            letter-spacing: 0.01em;
+            margin-top: 6px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 26px rgba(26, 122, 74, 0.38);
+        }
+
+        /* ===== OTP PAGE ===== */
+        .otp-page-wrap {
+            min-height: 100vh;
+            background: linear-gradient(160deg, var(--green-bg) 0%, var(--white) 60%);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .otp-center {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .otp-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 38px 32px;
+            max-width: 420px;
+            width: 100%;
+            box-shadow: var(--shadow-lg);
+            border: 1.5px solid var(--gray-100);
+            text-align: center;
+        }
+
+        .otp-icon {
+            width: 68px;
+            height: 68px;
+            background: var(--green-bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 18px;
+            border: 3px solid var(--green);
+        }
+
+        .otp-title {
+            font-family: 'Baloo 2', cursive;
+            font-weight: 800;
+            font-size: 1.4rem;
+            margin-bottom: 6px;
+        }
+
+        .otp-sub {
+            font-size: 0.9rem;
+            color: var(--gray-400);
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .otp-phone {
+            font-weight: 700;
+            color: var(--green);
+            font-size: 1rem;
+            margin-bottom: 28px;
+        }
+
+        .otp-inputs {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .otp-box {
+            width: 48px;
+            height: 54px;
+            border: 2px solid var(--gray-200);
+            border-radius: var(--radius-sm);
+            text-align: center;
+            font-family: 'Baloo 2', cursive;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--gray-800);
+            transition: var(--transition);
+        }
+
+        .otp-box:focus {
+            outline: none;
+            border-color: var(--green);
+            box-shadow: 0 0 0 3px rgba(26, 122, 74, 0.12);
+        }
+
+        .otp-resend {
+            font-size: 0.82rem;
+            color: var(--gray-400);
+            margin-bottom: 20px;
+        }
+
+        .otp-resend a {
+            color: var(--green);
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* ===== SUCCESS PAGE ===== */
+        .success-page-wrap {
+            min-height: 100vh;
+            background: linear-gradient(160deg, var(--green-bg) 0%, var(--white) 60%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .success-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 50px 36px;
+            max-width: 480px;
+            width: 100%;
+            box-shadow: var(--shadow-lg);
+            border: 1.5px solid var(--gray-100);
+            text-align: center;
+            animation: successPop 0.5s cubic-bezier(.34, 1.56, .64, 1) both;
+        }
+
+        @keyframes successPop {
+            from {
+                opacity: 0;
+                transform: scale(0.85);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .success-icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, var(--green), var(--green-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            margin: 0 auto 22px;
+            box-shadow: 0 6px 30px rgba(26, 122, 74, 0.3);
+            animation: iconBounce 0.6s 0.3s cubic-bezier(.34, 1.56, .64, 1) both;
+        }
+
+        @keyframes iconBounce {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .success-title {
+            font-family: 'Baloo 2', cursive;
+            font-weight: 800;
+            font-size: 1.7rem;
+            color: var(--green-dark);
+            margin-bottom: 12px;
+        }
+
+        .success-msg {
+            font-size: 0.97rem;
+            color: var(--gray-600);
+            line-height: 1.7;
+            max-width: 340px;
+            margin: 0 auto 32px;
+            font-weight: 500;
+        }
+
+        .success-worker-info {
+            background: var(--green-bg);
+            border-radius: var(--radius);
+            padding: 18px 20px;
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-align: left;
+            border: 1px solid rgba(26, 122, 74, 0.15);
+        }
+
+        .success-avatar {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2.5px solid var(--green);
+            flex-shrink: 0;
+        }
+
+        .success-worker-name {
+            font-family: 'Baloo 2', cursive;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--gray-800);
+        }
+
+        .success-worker-detail {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            margin-top: 3px;
+            font-weight: 600;
+        }
+
+        .confetti-row {
+            margin-bottom: 18px;
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+        }
+
+        /* ===== CONTACT SENT MODAL ===== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: 999;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(3px);
+            padding: 20px;
+        }
+
+        .modal-overlay.open {
+            display: flex;
+            animation: fadeIn 0.2s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .modal-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 32px 26px 26px;
+            max-width: 360px;
+            width: 100%;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            animation: slideUp 0.3s cubic-bezier(.34, 1.56, .64, 1) both;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 1.4rem;
+            cursor: pointer;
+            color: var(--gray-400);
+        }
+
+        .sent-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            display: block;
+            animation: iconPop 0.45s 0.1s cubic-bezier(.34, 1.56, .64, 1) both;
+        }
+
+        @keyframes iconPop {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .sent-title {
+            font-family: 'Baloo 2', cursive;
+            font-weight: 800;
+            font-size: 1.35rem;
+            color: var(--green-dark);
+            margin-bottom: 16px;
+        }
+
+        .sent-worker-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--green-bg);
+            border-radius: var(--radius);
+            padding: 12px 14px;
+            margin-bottom: 16px;
+            text-align: left;
+            border: 1px solid rgba(26, 122, 74, 0.15);
+        }
+
+        .sent-avatar-wrap {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+            border: 2.5px solid var(--green);
+            background: var(--green-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sent-avatar-wrap svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sent-worker-name {
+            font-family: 'Baloo 2', cursive;
+            font-weight: 700;
+            font-size: 0.97rem;
+            color: var(--gray-800);
+        }
+
+        .sent-worker-sub {
+            font-size: 0.78rem;
+            color: var(--gray-500);
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        .sent-msg {
+            font-size: 0.88rem;
+            color: var(--gray-600);
+            line-height: 1.65;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .sent-msg strong {
+            color: var(--green-dark);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--green-dark);
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 24px 20px;
+            font-size: 0.83rem;
+            font-weight: 500;
+        }
+
+        .footer strong {
+            color: white;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media(max-width:600px) {
+            .hero {
+                padding: 40px 16px 44px;
+            }
+
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .hero-stats {
+                gap: 12px;
+            }
+
+            .hero-stat {
+                padding: 10px 16px;
+            }
+
+            .form-inner {
+                padding: 24px 18px;
+            }
+
+            .otp-box {
+                width: 42px;
+                height: 48px;
+                font-size: 1.3rem;
+            }
+
+            .success-card {
+                padding: 36px 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== PAGE 1: LANDING ========== -->
+    <div class="page active" id="page-landing">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-inner">
+                <a class="logo" href="#">
+                    <div class="logo-icon">🌴</div>
+                    <div class="logo-text">Part-Time Jobs Kerala<span class="logo-sub">Find local workers, fast</span>
+                    </div>
+                </a>
+                <button class="btn-register-header" onclick="goTo('page-register')">Register as Worker</button>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-leaves">🌿</div>
+            <div class="hero-badge">🏆 Kerala's #1 Part-Time Platform</div>
+            <h1>Find Part-Time <span>Workers Near You</span></h1>
+            <p>Connect with trusted local workers for home cleaning, gardening, car wash, and more — across all major
+                districts of Kerala.</p>
+            <div class="hero-stats">
+                <div class="hero-stat"><strong>500+</strong><span>Workers</span></div>
+                <div class="hero-stat"><strong>14</strong><span>Districts</span></div>
+                <div class="hero-stat"><strong>4.8★</strong><span>Avg Rating</span></div>
+            </div>
+        </section>
+
+        <!-- Filters -->
+        <div class="filters-wrap">
+            <div class="filters">
+                <span class="filter-label">🔍 Filter:</span>
+                <select class="filter-select" id="filter-location" onchange="applyFilters()">
+                    <option value="">All Locations</option>
+                    <option value="Kasaragod">Kasaragod</option>
+                    <option value="Kannur">Kannur</option>
+                    <option value="Wayanad">Wayanad</option>
+                    <option value="Kozhikode">Kozhikode</option>
+                    <option value="Ernakulam">Ernakulam</option>
+                    <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                </select>
+                <select class="filter-select" id="filter-category" onchange="applyFilters()">
+                    <option value="">All Categories</option>
+                    <option value="Car Cleaning">Car Cleaning</option>
+                    <option value="House Cleaning">House Cleaning</option>
+                    <option value="Tank Cleaning">Tank Cleaning</option>
+                    <option value="Gardening">Gardening</option>
+                    <option value="Data Entry">Data Entry</option>
+                </select>
+                <div class="filter-count">Showing <span id="count-display">20</span> workers</div>
+            </div>
+        </div>
+
+        <!-- Workers -->
+        <div class="workers-section">
+            <div class="section-title">Available Workers <span>in Kerala</span></div>
+            <div class="workers-grid" id="workers-grid"></div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <strong>Part-Time Jobs Kerala</strong> &nbsp;|&nbsp; 🌴 Made with love for Kerala &nbsp;|&nbsp; © 2025
+        </footer>
+    </div><!-- /page-landing -->
+
+
+    <!-- ========== PAGE 2: REGISTRATION ========== -->
+    <div class="page" id="page-register">
+        <div class="reg-page-wrap">
+            <div class="reg-header">
+                <div class="reg-header-inner">
+                    <button class="btn-back" onclick="goTo('page-landing')">← Back</button>
+                    <div class="logo">
+                        <div class="logo-icon" style="width:32px;height:32px;font-size:16px;">🌴</div>
+                        <span
+                            style="font-family:'Baloo 2',cursive;font-weight:800;font-size:1rem;color:var(--green-dark);">Part-Time
+                            Jobs Kerala</span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar-wrap">
+                <div class="progress-steps">
+                    <div class="p-step active" id="ps1">
+                        <div class="p-dot">1</div>
+                        <div class="p-label">Details</div>
+                    </div>
+                    <div class="p-step" id="ps2">
+                        <div class="p-dot">2</div>
+                        <div class="p-label">OTP</div>
+                    </div>
+                    <div class="p-step" id="ps3">
+                        <div class="p-dot">3</div>
+                        <div class="p-label">Done</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-card">
+                <div class="form-inner">
+                    <div class="form-title">Worker Registration</div>
+                    <div class="form-subtitle">Fill in your details to get discovered by customers near you.</div>
+
+                    <div class="form-group">
+                        <label class="form-label">Profile Photo <span class="req">*</span></label>
+                        <div class="upload-area" onclick="document.getElementById('photo-input').click()">
+                            <img class="upload-preview" id="upload-preview-img"
+                                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f3f4f6'/%3E%3Ccircle cx='50' cy='36' r='22' fill='%239ca3af'/%3E%3Cpath d='M5 97 Q5 63 50 63 Q95 63 95 97Z' fill='%239ca3af'/%3E%3C/svg%3E"
+                                alt="Profile Preview" />
+                            <div class="upload-text">Tap to change photo</div>
+                            <div class="upload-hint">JPG, PNG, max 5MB</div>
+                        </div>
+                        <input type="file" id="photo-input" style="display:none" accept="image/*"
+                            onchange="previewPhoto(this)" />
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Full Name <span class="req">*</span></label>
+                            <input class="form-input" type="text" id="reg-name" value="Arjun Krishnan"
+                                placeholder="Enter your name" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Age <span class="req">*</span></label>
+                            <input class="form-input" type="number" id="reg-age" value="26" placeholder="Your age"
+                                min="18" max="65" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Mobile Number <span class="req">*</span></label>
+                        <input class="form-input" type="tel" id="reg-mobile" value="9847312450"
+                            placeholder="10-digit mobile number" maxlength="10" />
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Location <span class="req">*</span></label>
+                            <select class="form-input form-select" id="reg-location">
+                                <option value="">Select District</option>
+                                <option value="Kasaragod">Kasaragod</option>
+                                <option value="Kannur" selected>Kannur</option>
+                                <option value="Wayanad">Wayanad</option>
+                                <option value="Kozhikode">Kozhikode</option>
+                                <option value="Ernakulam">Ernakulam</option>
+                                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Category <span class="req">*</span></label>
+                            <select class="form-input form-select" id="reg-category">
+                                <option value="">Select Work</option>
+                                <option value="Car Cleaning" selected>Car Cleaning</option>
+                                <option value="House Cleaning">House Cleaning</option>
+                                <option value="Tank Cleaning">Tank Cleaning</option>
+                                <option value="Gardening">Gardening</option>
+                                <option value="Data Entry">Data Entry</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" onclick="goToOTP()">Continue to OTP Verification →</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- /page-register -->
+
+
+    <!-- ========== PAGE 3: OTP ========== -->
+    <div class="page" id="page-otp">
+        <div class="otp-page-wrap">
+            <div class="reg-header">
+                <div class="reg-header-inner">
+                    <button class="btn-back" onclick="goTo('page-register')">← Back</button>
+                    <div class="logo">
+                        <div class="logo-icon" style="width:32px;height:32px;font-size:16px;">🌴</div>
+                        <span
+                            style="font-family:'Baloo 2',cursive;font-weight:800;font-size:1rem;color:var(--green-dark);">Part-Time
+                            Jobs Kerala</span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar-wrap">
+                <div class="progress-steps">
+                    <div class="p-step done" id="ps1b">
+                        <div class="p-dot">✓</div>
+                        <div class="p-label">Details</div>
+                    </div>
+                    <div class="p-step active" id="ps2b">
+                        <div class="p-dot">2</div>
+                        <div class="p-label">OTP</div>
+                    </div>
+                    <div class="p-step" id="ps3b">
+                        <div class="p-dot">3</div>
+                        <div class="p-label">Done</div>
+                    </div>
+                </div>
+            </div>
+            <div class="otp-center">
+                <div class="otp-card">
+                    <div class="otp-icon">📱</div>
+                    <div class="otp-title">Verify Your Mobile</div>
+                    <div class="otp-sub">OTP sent to</div>
+                    <div class="otp-phone" id="otp-phone-display">+91 98473 12450</div>
+                    <div class="otp-inputs">
+                        <input class="otp-box" type="text" maxlength="1" id="o1" value="1"
+                            oninput="moveOTP(this,'o2')" />
+                        <input class="otp-box" type="text" maxlength="1" id="o2" value="2"
+                            oninput="moveOTP(this,'o3')" />
+                        <input class="otp-box" type="text" maxlength="1" id="o3" value="3"
+                            oninput="moveOTP(this,'o4')" />
+                        <input class="otp-box" type="text" maxlength="1" id="o4" value="4"
+                            oninput="moveOTP(this,'o5')" />
+                        <input class="otp-box" type="text" maxlength="1" id="o5" value="5"
+                            oninput="moveOTP(this,'o6')" />
+                        <input class="otp-box" type="text" maxlength="1" id="o6" value="6"
+                            oninput="moveOTP(this,null)" />
+                    </div>
+                    <div class="otp-resend">Didn't receive OTP? <a>Resend in 0:30</a></div>
+                    <button class="btn-primary" onclick="verifyOTP()">Verify & Register ✓</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- /page-otp -->
+
+
+    <!-- ========== PAGE 4: SUCCESS ========== -->
+    <div class="page" id="page-success">
+        <div class="success-page-wrap">
+            <div style="width:100%;max-width:500px;">
+                <div class="success-card">
+                    <div class="confetti-row">🎉 🎊 🎉</div>
+                    <div class="success-icon">✅</div>
+                    <div class="success-title">Registration Successful!</div>
+                    <p class="success-msg">You are now registered as a part-time worker. Customers can find and contact
+                        you through the platform.</p>
+                    <div class="success-worker-info">
+                        <img class="success-avatar" id="success-avatar"
+                            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f3f4f6'/%3E%3Ccircle cx='50' cy='36' r='22' fill='%239ca3af'/%3E%3Cpath d='M5 97 Q5 63 50 63 Q95 63 95 97Z' fill='%239ca3af'/%3E%3C/svg%3E"
+                            alt="Profile" />
+                        <div>
+                            <div class="success-worker-name" id="success-name">Arjun Krishnan</div>
+                            <div class="success-worker-detail" id="success-detail">Car Cleaning · Kannur</div>
+                        </div>
+                    </div>
+                    <button class="btn-primary" onclick="goTo('page-landing')"
+                        style="background:linear-gradient(135deg,var(--green-dark),var(--green-light))">← Back to
+                        Home</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- /page-success -->
+
+
+    <!-- ========== PAGE 5: CUSTOMER REGISTRATION ========== -->
+    <div class="page" id="page-customer-register">
+        <div class="reg-page-wrap">
+            <div class="reg-header">
+                <div class="reg-header-inner">
+                    <button class="btn-back" onclick="goTo('page-landing')">← Back</button>
+                    <div class="logo">
+                        <div class="logo-icon" style="width:32px;height:32px;font-size:16px;">🌴</div>
+                        <span
+                            style="font-family:'Baloo 2',cursive;font-weight:800;font-size:1rem;color:var(--green-dark);">Part-Time
+                            Jobs Kerala</span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar-wrap">
+                <div class="progress-steps">
+                    <div class="p-step active">
+                        <div class="p-dot">1</div>
+                        <div class="p-label">Details</div>
+                    </div>
+                    <div class="p-step">
+                        <div class="p-dot">2</div>
+                        <div class="p-label">OTP</div>
+                    </div>
+                    <div class="p-step">
+                        <div class="p-dot">3</div>
+                        <div class="p-label">Done</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-card">
+                <div class="form-inner">
+                    <div class="form-title">Hire a Worker</div>
+                    <div class="form-subtitle">Register to connect with trusted part-time workers near you.</div>
+
+                    <div class="form-group">
+                        <label class="form-label">Mobile Number <span class="req">*</span></label>
+                        <input class="form-input" type="tel" id="cust-mobile" placeholder="10-digit mobile number"
+                            maxlength="10" value="9847312450" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Location <span class="req">*</span></label>
+                        <select class="form-input form-select" id="cust-location">
+                            <option value="">Select District</option>
+                            <option value="Kasaragod">Kasaragod</option>
+                            <option value="Kannur">Kannur</option>
+                            <option value="Wayanad">Wayanad</option>
+                            <option value="Kozhikode" selected>Kozhikode</option>
+                            <option value="Ernakulam">Ernakulam</option>
+                            <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">What work do you need? <span
+                                style="font-weight:500;color:var(--gray-400);">(Optional)</span></label>
+                        <textarea class="form-input form-textarea" id="cust-desc" rows="3"
+                            placeholder="e.g. Need someone for house cleaning twice a week...">Need someone for house cleaning twice a week, preferably mornings.</textarea>
+                    </div>
+
+                    <button class="btn-primary" onclick="goToCustomerOTP()">Continue to OTP Verification →</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- /page-customer-register -->
+
+
+    <!-- ========== PAGE 6: CUSTOMER OTP ========== -->
+    <div class="page" id="page-customer-otp">
+        <div class="otp-page-wrap">
+            <div class="reg-header">
+                <div class="reg-header-inner">
+                    <button class="btn-back" onclick="goTo('page-customer-register')">← Back</button>
+                    <div class="logo">
+                        <div class="logo-icon" style="width:32px;height:32px;font-size:16px;">🌴</div>
+                        <span
+                            style="font-family:'Baloo 2',cursive;font-weight:800;font-size:1rem;color:var(--green-dark);">Part-Time
+                            Jobs Kerala</span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar-wrap">
+                <div class="progress-steps">
+                    <div class="p-step done">
+                        <div class="p-dot">✓</div>
+                        <div class="p-label">Details</div>
+                    </div>
+                    <div class="p-step active">
+                        <div class="p-dot">2</div>
+                        <div class="p-label">OTP</div>
+                    </div>
+                    <div class="p-step">
+                        <div class="p-dot">3</div>
+                        <div class="p-label">Done</div>
+                    </div>
+                </div>
+            </div>
+            <div class="otp-center">
+                <div class="otp-card">
+                    <div class="otp-icon">📱</div>
+                    <div class="otp-title">Verify Your Mobile</div>
+                    <div class="otp-sub">OTP sent to</div>
+                    <div class="otp-phone" id="cust-otp-phone-display">+91 XXXXX XXXXX</div>
+                    <div class="otp-inputs">
+                        <input class="otp-box" type="text" maxlength="1" id="co1" value="1"
+                            oninput="moveOTP(this,'co2')" />
+                        <input class="otp-box" type="text" maxlength="1" id="co2" value="2"
+                            oninput="moveOTP(this,'co3')" />
+                        <input class="otp-box" type="text" maxlength="1" id="co3" value="3"
+                            oninput="moveOTP(this,'co4')" />
+                        <input class="otp-box" type="text" maxlength="1" id="co4" value="4"
+                            oninput="moveOTP(this,'co5')" />
+                        <input class="otp-box" type="text" maxlength="1" id="co5" value="5"
+                            oninput="moveOTP(this,'co6')" />
+                        <input class="otp-box" type="text" maxlength="1" id="co6" value="6"
+                            oninput="moveOTP(this,null)" />
+                    </div>
+                    <div class="otp-resend">Didn't receive OTP? <a>Resend in 0:30</a></div>
+                    <button class="btn-primary" onclick="verifyCustomerOTP()">Verify & Register ✓</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- /page-customer-otp -->
+
+
+    <!-- ===== CONTACT SENT MODAL ===== -->
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-card" style="position:relative;">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="sent-icon">✅</div>
+            <div class="sent-title">Details Sent!</div>
+            <div class="sent-worker-row">
+                <div class="sent-avatar-wrap" id="modal-avatar-wrap"></div>
+                <div class="sent-worker-info">
+                    <div class="sent-worker-name" id="modal-name"></div>
+                    <div class="sent-worker-sub" id="modal-cat"></div>
+                </div>
+            </div>
+            <div class="sent-msg">The contact number of <strong id="modal-name-inline"></strong> has been sent to your registered mobile number. Thank you for using our service!</div>
+            <button class="btn-call" onclick="closeModal()" style="width:100%;margin-top:4px;">Got it 👍</button>
+        </div>
+    </div>
+
+    <!-- ===== CUSTOMER SUCCESS MODAL ===== -->
+    <div class="modal-overlay" id="customer-success-modal">
+        <div class="modal-card" style="position:relative;">
+            <span class="sent-icon">🎉</span>
+            <div class="sent-title" style="color:var(--green-dark);">Registration Successful!</div>
+            <div class="sent-msg">You have been successfully registered. Now you can <strong>hire part-time workers</strong> across Kerala!</div>
+            <button class="btn-primary" onclick="closeCustomerSuccessModal()" style="margin-top:4px;">Start Hiring →</button>
+        </div>
+    </div>
+
+    <script>
+        /* ===== DATA ===== */
+        const workers = [
+            { id: 1, name: "Arun Kumar", age: 28, category: "Car Cleaning", location: "Ernakulam", phone: "9847101234", seed: "ArunKumar" },
+            { id: 2, name: "Vishnu Nair", age: 34, category: "House Cleaning", location: "Kozhikode", phone: "9895202345", seed: "VishnuNair" },
+            { id: 3, name: "Akhil Das", age: 22, category: "Gardening", location: "Kannur", phone: "9745303456", seed: "AkhilDas" },
+            { id: 4, name: "Rahul Krishnan", age: 30, category: "Data Entry", location: "Thiruvananthapuram", phone: "8547404567", seed: "RahulKrishnan" },
+            { id: 5, name: "Nithin Raj", age: 25, category: "Tank Cleaning", location: "Kasaragod", phone: "9562505678", seed: "NithinRaj" },
+            { id: 6, name: "Sreejith Menon", age: 32, category: "Car Cleaning", location: "Wayanad", phone: "9847606789", seed: "SreejithMenon" },
+            { id: 7, name: "Ajith Pillai", age: 27, category: "House Cleaning", location: "Ernakulam", phone: "9895707890", seed: "AjithPillai" },
+            { id: 8, name: "Deepak Varma", age: 23, category: "Gardening", location: "Kozhikode", phone: "9745808901", seed: "DeepakVarma" },
+            { id: 9, name: "Midhun Babu", age: 29, category: "Data Entry", location: "Kannur", phone: "8547909012", seed: "MidhunBabu" },
+            { id: 10, name: "Jithin Thomas", age: 31, category: "Tank Cleaning", location: "Thiruvananthapuram", phone: "9562010123", seed: "JithinThomas" },
+            { id: 11, name: "Sreerag Suresh", age: 24, category: "Car Cleaning", location: "Kasaragod", phone: "9847111234", seed: "SreeragSuresh" },
+            { id: 12, name: "Arjun Chandran", age: 26, category: "House Cleaning", location: "Wayanad", phone: "9895212345", seed: "ArjunChandran" },
+            { id: 13, name: "Pranav Unnikrishnan", age: 21, category: "Gardening", location: "Ernakulam", phone: "9745313456", seed: "PranavUnni" },
+            { id: 14, name: "Shyam Gopal", age: 35, category: "Data Entry", location: "Kozhikode", phone: "8547414567", seed: "ShyamGopal" },
+            { id: 15, name: "Vineeth Kumar", age: 28, category: "Tank Cleaning", location: "Kannur", phone: "9562515678", seed: "VineethKumar" },
+            { id: 16, name: "Bibin George", age: 33, category: "Car Cleaning", location: "Thiruvananthapuram", phone: "9847616789", seed: "BibinGeorge" },
+            { id: 17, name: "Anand Nambiar", age: 27, category: "House Cleaning", location: "Kasaragod", phone: "9895717890", seed: "AnandNambiar" },
+            { id: 18, name: "Roshan Mathew", age: 24, category: "Gardening", location: "Wayanad", phone: "9745818901", seed: "RoshanMathew" },
+            { id: 19, name: "Harikrishnan P", age: 30, category: "Data Entry", location: "Ernakulam", phone: "8547919012", seed: "HariKrishnan" },
+            { id: 20, name: "Sachin Vijayan", age: 26, category: "Tank Cleaning", location: "Kozhikode", phone: "9562020123", seed: "SachinVijayan" }
+        ];
+
+        const PERSON_ICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f3f4f6'/%3E%3Ccircle cx='50' cy='36' r='22' fill='%239ca3af'/%3E%3Cpath d='M5 97 Q5 63 50 63 Q95 63 95 97Z' fill='%239ca3af'/%3E%3C/svg%3E";
+
+        /* ===== RENDER WORKERS ===== */
+        function renderWorkers(list) {
+            const grid = document.getElementById('workers-grid');
+            grid.innerHTML = '';
+            if (list.length === 0) {
+                grid.innerHTML = `<div class="no-results"><span class="icon">🔍</span><p>No workers found for the selected filters.</p></div>`;
+                document.getElementById('count-display').textContent = 0;
+                return;
+            }
+            document.getElementById('count-display').textContent = list.length;
+            list.forEach((w, i) => {
+                const card = document.createElement('div');
+                card.className = 'worker-card';
+                card.dataset.location = w.location;
+                card.dataset.category = w.category;
+                card.innerHTML = `
+      <div class="card-photo-wrap">
+        <img class="card-photo" src="${PERSON_ICON}" alt="${w.name}" />
+        <span class="card-category-badge">${w.category}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">${w.name}</div>
+        <div class="card-meta">
+          <span class="card-age">${w.age} yrs</span>
+          <span class="card-location">${w.location}</span>
+        </div>
+        <button class="btn-contact" onclick='openContact(${JSON.stringify(w.name)},${JSON.stringify(w.category)},${JSON.stringify(w.location)},${w.id})'>Contact</button>
+      </div>`;
+                grid.appendChild(card);
+            });
+        }
+
+        function applyFilters() {
+            const loc = document.getElementById('filter-location').value;
+            const cat = document.getElementById('filter-category').value;
+            const filtered = workers.filter(w =>
+                (loc === '' || w.location === loc) &&
+                (cat === '' || w.category === cat)
+            );
+            renderWorkers(filtered);
+        }
+
+        /* ===== NAVIGATION ===== */
+        function goTo(pageId) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        /* ===== REGISTER FLOW ===== */
+        function goToOTP() {
+            const name = document.getElementById('reg-name').value.trim();
+            const age = document.getElementById('reg-age').value;
+            const mobile = document.getElementById('reg-mobile').value.trim();
+            const location = document.getElementById('reg-location').value;
+            const category = document.getElementById('reg-category').value;
+            if (!name || !age || !mobile || !location || !category) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            // Format phone in OTP page
+            const phoneFormatted = '+91 ' + mobile.slice(0, 5) + ' ' + mobile.slice(5);
+            document.getElementById('otp-phone-display').textContent = phoneFormatted;
+            goTo('page-otp');
+        }
+
+        function moveOTP(el, nextId) {
+            if (el.value.length === 1 && nextId) {
+                document.getElementById(nextId).focus();
+            }
+        }
+
+        function verifyOTP() {
+            const otp = ['o1', 'o2', 'o3', 'o4', 'o5', 'o6'].map(id => document.getElementById(id).value).join('');
+            if (otp !== '123456') {
+                alert('Invalid OTP. Please use: 123456');
+                return;
+            }
+            // Populate success page
+            const name = document.getElementById('reg-name').value;
+            const location = document.getElementById('reg-location').value;
+            const category = document.getElementById('reg-category').value;
+            const previewSrc = document.getElementById('upload-preview-img').src;
+            document.getElementById('success-name').textContent = name;
+            document.getElementById('success-detail').textContent = `${category} · ${location}`;
+            document.getElementById('success-avatar').src = previewSrc;
+            goTo('page-success');
+        }
+
+        /* ===== PHOTO PREVIEW ===== */
+        function previewPhoto(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = e => { document.getElementById('upload-preview-img').src = e.target.result; };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        /* ===== CONTACT MODAL ===== */
+        function openContact(name, cat, loc, workerId) {
+            if (workerId % 2 !== 0) {
+                // Odd-numbered worker → Customer Registration page
+                goTo('page-customer-register');
+            } else {
+                // Even-numbered worker → "Number sent" popup
+                document.getElementById('modal-name').textContent = name;
+                document.getElementById('modal-cat').textContent = `${cat} · ${loc}`;
+                document.getElementById('modal-name-inline').textContent = name;
+                document.getElementById('modal-avatar-wrap').innerHTML = `<img src="${PERSON_ICON}" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" alt="${name}"/>`;
+                document.getElementById('contact-modal').classList.add('open');
+            }
+        }
+        function closeModal() {
+            document.getElementById('contact-modal').classList.remove('open');
+        }
+        document.getElementById('contact-modal').addEventListener('click', function (e) {
+            if (e.target === this) closeModal();
+        });
+
+        /* ===== CUSTOMER FLOW ===== */
+        function goToCustomerOTP() {
+            const mobile = document.getElementById('cust-mobile').value.trim();
+            const location = document.getElementById('cust-location').value;
+            if (!mobile || !location) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            if (mobile.length !== 10) {
+                alert('Please enter a valid 10-digit mobile number.');
+                return;
+            }
+            const phoneFormatted = '+91 ' + mobile.slice(0, 5) + ' ' + mobile.slice(5);
+            document.getElementById('cust-otp-phone-display').textContent = phoneFormatted;
+            goTo('page-customer-otp');
+        }
+
+        function verifyCustomerOTP() {
+            const otp = ['co1', 'co2', 'co3', 'co4', 'co5', 'co6'].map(id => document.getElementById(id).value).join('');
+            if (otp !== '123456') {
+                alert('Invalid OTP. Please use: 123456');
+                return;
+            }
+            goTo('page-landing');
+            document.getElementById('customer-success-modal').classList.add('open');
+        }
+
+        function closeCustomerSuccessModal() {
+            document.getElementById('customer-success-modal').classList.remove('open');
+        }
+        document.getElementById('customer-success-modal').addEventListener('click', function (e) {
+            if (e.target === this) closeCustomerSuccessModal();
+        });
+
+        /* ===== INIT ===== */
+        renderWorkers(workers);
+    </script>
+</body>
+
+</html>
